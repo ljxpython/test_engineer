@@ -9,7 +9,7 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        left,right = 0, len(nums) # 定义target在左闭右开的区间里，即：[left, right)
+        left,right = 0, len(nums)-1 # 定义target在左闭右开的区间里，即：[left, right)
         while left < right:
             middle = left + (right - left)//2
             if nums[middle] < target:
