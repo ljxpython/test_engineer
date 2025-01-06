@@ -32,6 +32,78 @@
 
 
 
+我们先初始化指针 i=0 和 j=n−1 ，分别指向数组首元素和尾元素，代表搜索区间 [0,n−1] 。请注意，中括号表示闭区间，其包含边界值本身。
+
+接下来，循环执行以下两步。
+
+1. 计算中点索引 m=⌊(i+j)/2⌋ ，其中 ⌊⌋ 表示向下取整操作。
+2. 判断`nums[m]`和`target` 的大小关系，分为以下三种情况。
+   1. 当 `nums[m] < target` 时，说明 `target` 在区间 [m+1,j] 中，因此执行 i=m+1 。
+   2. 当 `nums[m] > target` 时，说明 `target` 在区间 [i,m−1] 中，因此执行 j=m−1 。
+   3. 当 `nums[m] = target` 时，说明找到 `target` ，因此返回索引 m 。
+
+若数组不包含目标元素，搜索区间最终会缩小为空。此时返回 −1 。
+
+
+
+
+
+```
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+        
+class MyLinkedList:
+    def __init__(self):
+        self.dummy_head = ListNode()
+        self.size = 0
+
+    def get(self, index):
+        if index < 0 or index >= self.size:
+            return -1
+        
+        current = self.dummy_head.next
+        for i in range(index):
+            current = current.next
+            
+        return current.val
+
+    def addAtHead(self, val):
+        self.dummy_head.next = ListNode(val, self.dummy_head.next)
+        self.size += 1
+
+    def addAtTail(self, val):
+        current = self.dummy_head
+        while current.next:
+            current = current.next
+        current.next = ListNode(val)
+        self.size += 1
+
+    def addAtIndex(self, index, val):
+        if index < 0 or index > self.size:
+            return
+        
+        current = self.dummy_head
+        for i in range(index):
+            current = current.next
+        current.next = ListNode(val, current.next)
+        self.size += 1
+
+    def deleteAtIndex(self, index):
+        if index < 0 or index >= self.size:
+            return
+        
+        current = self.dummy_head
+        for i in range(index):
+            current = current.next
+        current.next = current.next.next
+        self.size -= 1    
+
+```
+
+
+
 
 
 
