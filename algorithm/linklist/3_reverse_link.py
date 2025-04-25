@@ -9,10 +9,10 @@
     A -> B -> C -> D -> None
 
     定义 current  prev tmp
-    最开始 从 head 的部分开始
+    最开始 从 head 的部分开始，每次只改变 current 的指针指向
     current -> tmp -> .... -> None(prev)
     经过第一次
-    None(prev) <- current <- tmp ...
+    None(prev) <- current  tmp ...
 
     最后：
     None <- A <- B <- C <- D
@@ -33,12 +33,13 @@ class Solution(object):
         """
         cur = head # 当前的节点
         pre = None # 前一个节点
-        # 开始迭代
+        # 开始迭代，判断需不需要继续的标准是 cur 还存不存在，而不是 cur.next
         while cur:
-            # 最开始迭代时，保存头部的下个节点，之后局势当前要替换的下个节点
+            # 最开始迭代时，保存头部的下个节点，之后就是当前要替换的下个节点
             tmp = cur.next
             # 改变当前指针的指向
             cur.next = pre
+            ## 下面的操作就是为了下一个迭代做准备了，自己想一想为什么是 pre cur tmp 这样的赋值顺序
             # 前一个节点变成当前节点
             pre = cur
             # 当前节点移动到下一个节点

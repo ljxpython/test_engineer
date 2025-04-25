@@ -1,8 +1,6 @@
 # 移除数组元素
 # 这里需要注意的点： 数组的元素在内存地址中是连续的，不能单独删除数组中的某个元素，只能覆盖。
-from pre_commit.output import write_line
 
-from test.test import list_1
 
 
 # 力扣题目： https://leetcode.cn/problems/remove-element/description/
