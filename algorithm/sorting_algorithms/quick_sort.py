@@ -26,6 +26,7 @@ def quick_sort(arr,left,right):
         k = left -1
         # 分割归类
         for i in range(left,right):
+            # 我们要保证第k个数包括第k个数都比pivot小,如果不是,如下方式进行替换
             if arr[i] <= pivot:
                 k+=1
                 arr[i],arr[k] = arr[k],arr[i]
