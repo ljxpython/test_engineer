@@ -1,8 +1,12 @@
 # 测试开发能力
 
-## 数据结构与算法准备
-学习资料推荐：
 
+## 个人博客
+https://www.coder-ljx.cn:8825/
+
+## 数据结构与算法准备
+
+学习资料推荐：
 https://www.hello-algo.com/
 
 https://programmercarl.com/
