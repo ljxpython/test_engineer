@@ -159,6 +159,109 @@ class Solution1:
 
 
 
+# 20.有效括号
+# https://leetcode.cn/problems/valid-parentheses/
+class Solution2(object):
+    def isValid(self, s:str):
+        """
+        这个题目可以这样考虑:
+        使用栈的思路:
+            接下来要处理什么情况下入栈什么情况下出站
+            当匹配({[时入栈,其余情况出栈
+        :type s: str
+        :rtype: bool
+        """
+        if len(s) == 1:
+            return False
+        left_list = []
+        str_map = {
+            "(":")",
+            "{":"}",
+            "[":"]",
+            "}":"{",
+            ")": "(",
+            "]": "[",
+        }
+        for i in s:
+            # 入栈情况
+            if i in "({[":
+                left_list.append(i)
+            # 出栈考虑
+            else:
+                # 判断最后一个元素是否为预期值
+                if left_list:
+                    if i == str_map[left_list[-1]]:
+                        left_list.pop()
+                    else:
+                        return False
+                else:
+                    # 括号不匹配
+                    return False
+        # 最后如果全部匹配通过left_list应该为空
+        if len(left_list) == 0:
+            return True
+        else:
+            return False
+
+# 两数之和
+# https://leetcode.cn/problems/two-sum/
+class Solution3(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        思路: 两层遍历,排除自己
+
+        进阶思路: 滑动窗口
+        """
+        for index_a,a in enumerate(nums):
+            for index_b,b in enumerate(nums):
+                if index_b != index_a and a+b == target:
+                    return [index_a,index_b]
+
+
+# 206.反转链表
+# https://leetcode.cn/problems/reverse-linked-list/
+# Definition for singly-linked list.
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Solution4(object):
+    def reverseList(self, head:ListNode):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        a -> b -> c ->d
+
+        cur = a
+        pre = None
+
+        1.
+        tmp(b) = a.next
+
+        2.
+        a.next = pre
+
+        3. next loop
+        pre(a) = cur
+        cur(b) = tmp
+        none <- a   b(cur) -> c -> d
+
+        """
+        # 定义当前节点和下一个节点
+        cur = head
+        pre = None
+        # 当有下一个节点时
+        while cur:
+            tmp = cur.next
+            cur.next = pre
+            # 调换 tmp 指向当前的值
+            tmp.next = cur
+
+
+
 
 
 
@@ -168,11 +271,18 @@ if __name__ == '__main__':
     # s = "pwwkew"
     # s = " "
     # s = 'au'
-    s = 'aabaab!bb'
-    length = Solution1().lengthOfLongestSubstring(s)
-    print(length)
+    # s = 'aabaab!bb'
+    # length = Solution1().lengthOfLongestSubstring(s)
+    # print(length)
     # print(len(" "))
     # for i in enumerate(s):
     #     print(i)
-
+    # s = "([])"
+    # s = "["
+    # s = "){"
+    # print(Solution2().isValid(s))
+    nums = [3, 3]
+    target = 6
+    res = Solution3().twoSum(nums=nums,target=target)
+    print(res)
 
