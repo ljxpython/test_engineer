@@ -258,7 +258,47 @@ class Solution4(object):
             tmp = cur.next
             cur.next = pre
             # 调换 tmp 指向当前的值
-            tmp.next = cur
+            pre = cur
+            cur = tmp
+        return pre
+# 辅助函数：打印链表
+def print_linked_list(head):
+    current = head
+    while current:
+        print(current.val, end=" -> " if current.next else "\n")
+        current = current.next
+
+# 字符串转整数
+# https://leetcode.cn/problems/string-to-integer-atoi/description/
+class Solution5(object):
+    def myAtoi(self, s:str):
+        """
+        分步骤解题:
+        1. 前置操作: 去除空行
+        2. 检查下一个字符是否为-+
+        3. 取字符串中的数值直到遇到非数字
+        :type s: str
+        :rtype: int
+        """
+        if not len(s):
+            return 0
+        # 定义变量
+        ## 数值
+        num_str = ''
+        ## 正负符号
+        pre = ''
+        # 去除空行
+        s = s.strip()
+        # 前置判断是正是负
+        if s[0] == '-':
+            pre = '-'
+        if s[0] == '+':
+            pass
+        else:
+            pass
+
+
+
 
 
 
@@ -281,8 +321,26 @@ if __name__ == '__main__':
     # s = "["
     # s = "){"
     # print(Solution2().isValid(s))
-    nums = [3, 3]
-    target = 6
-    res = Solution3().twoSum(nums=nums,target=target)
-    print(res)
+    # nums = [3, 3]
+    # target = 6
+    # res = Solution3().twoSum(nums=nums,target=target)
+    # print(res)
+    # 构建链表 1 -> 2 -> 3 -> 4 -> 5
+    # head = ListNode(1)
+    # head.next = ListNode(2)
+    # head.next.next = ListNode(3)
+    # head.next.next.next = ListNode(4)
+    # head.next.next.next.next = ListNode(5)
+    #
+    # print("原始链表:")
+    # print_linked_list(head)
+    # # 实例化 Solution4 类
+    # solution = Solution4()
+    # # 调用 reverseList 方法反转链表
+    # reversed_head = solution.reverseList(head)
+    #
+    # print("反转后的链表:")
+    # print_linked_list(reversed_head)
+    # 字符串转数字
+    print(len(" "))
 
