@@ -1,0 +1,7 @@
+loginPage:
+    username: "input[placeholder=\"账号\"]"
+    password: "input[placeholder=\"密码\"]"
+    message: ".el-message.el-message--error"
+    submit: "text=账户登陆"
+productBasicPage:
+    productname: "input[name=\"editFormData[name][name_en]\"]"

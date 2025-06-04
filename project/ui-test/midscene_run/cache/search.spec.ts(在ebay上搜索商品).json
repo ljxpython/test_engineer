@@ -1,0 +1,122 @@
+{
+  "pkgName": "ui-testing",
+  "pkgVersion": "1.0.0",
+  "cacheId": "search.spec.ts(在ebay上搜索商品)",
+  "aiTasks": [
+    {
+      "prompt": "Input - 搜索框",
+      "tasks": [
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://www.ebay.com/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "搜索框",
+          "response": {
+            "elements": [
+              {
+                "id": "opecb"
+              }
+            ]
+          },
+          "element": {
+            "id": "opecb",
+            "indexId": 17,
+            "center": [
+              564,
+              71
+            ],
+            "rect": {
+              "left": 271,
+              "top": 51,
+              "width": 586,
+              "height": 40,
+              "zoom": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Tap - 搜索按钮",
+      "tasks": [
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://www.ebay.com/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "搜索按钮",
+          "response": {
+            "elements": [
+              {
+                "id": "mijgk"
+              }
+            ]
+          },
+          "element": {
+            "id": "mijgk",
+            "indexId": 20,
+            "center": [
+              1118,
+              71
+            ],
+            "rect": {
+              "left": 1034,
+              "top": 49,
+              "width": 168,
+              "height": 44,
+              "zoom": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Scroll - 搜索结果列表 - down, once, distance-not-set",
+      "tasks": [
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://www.ebay.com/sch/i.html?_nkw=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&_sacat=0&_from=R40&_trksid=m570.l1313",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "搜索结果列表",
+          "response": {
+            "elements": [
+              {
+                "id": "lhbfj"
+              }
+            ]
+          },
+          "element": {
+            "id": "lhbfj",
+            "center": [
+              662.5,
+              432
+            ],
+            "rect": {
+              "left": 658.5,
+              "top": 428,
+              "width": 8,
+              "height": 8
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

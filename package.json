@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@midscene/web": "^0.17.5"
+  }
+}
