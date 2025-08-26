@@ -291,3 +291,6 @@ pyrightconfig.json
 **/node_modules
 
 **/.env
+
+
+/resumePolice

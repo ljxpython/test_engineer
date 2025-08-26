@@ -1,0 +1,647 @@
+{
+  "pkgName": "ui-testing",
+  "pkgVersion": "1.0.0",
+  "cacheId": "todo-mvc-zh.spec.ts(ai todo - Chinese Prompt)",
+  "aiTasks": [
+    {
+      "prompt": "在任务框 input 输入 今天学习 JS，按回车键",
+      "tasks": [
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在任务框 input 输入 今天学习 JS，按回车键 @ ",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "在任务框 input 输入 今天学习 JS，按回车键",
+            "log": "我将使用 Input 动作在任务框中输入 '今天学习 JS'。",
+            "more_actions_needed_by_instruction": true,
+            "action": {
+              "type": "Input",
+              "locate": {
+                "prompt": "任务框 input",
+                "bbox": [
+                  513,
+                  127,
+                  1068,
+                  199
+                ]
+              },
+              "param": {
+                "value": "今天学习 JS"
+              }
+            },
+            "actions": [
+              {
+                "type": "Input",
+                "locate": {
+                  "prompt": "任务框 input",
+                  "bbox": [
+                    513,
+                    127,
+                    1068,
+                    199
+                  ]
+                },
+                "param": {
+                  "value": "今天学习 JS"
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"在任务框 input 输入 今天学习 JS，按回车键\",\n  \"log\": \"我将使用 Input 动作在任务框中输入 '今天学习 JS'。\",\n  \"more_actions_needed_by_instruction\": true,\n  \"action\": {\n    \"type\": \"Input\",\n    \"locate\": {\n      \"bbox_2d\": [\n        513,\n        127,\n        1068,\n        199\n      ],\n      \"prompt\": \"任务框 input\"\n    },\n    \"param\": {\n      \"value\": \"今天学习 JS\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 1977,
+              "completion_tokens": 144,
+              "total_tokens": 2121
+            }
+          }
+        },
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "任务框 input",
+          "response": {
+            "elements": [
+              {
+                "id": "okgbn"
+              }
+            ]
+          },
+          "element": {
+            "id": "okgbn",
+            "indexId": 18,
+            "center": [
+              790,
+              162
+            ],
+            "rect": {
+              "left": 515,
+              "top": 130,
+              "width": 550,
+              "height": 65,
+              "zoom": 1
+            }
+          }
+        },
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在任务框 input 输入 今天学习 JS，按回车键 @ - 我将使用 Input 动作在任务框中输入 '今天学习 JS'。",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "在任务框 input 输入 '今天学习 JS' 后，按回车键。",
+            "log": "我将使用 KeyboardPress 动作来按回车键。",
+            "more_actions_needed_by_instruction": false,
+            "action": {
+              "type": "KeyboardPress",
+              "param": {
+                "value": "Enter"
+              }
+            },
+            "actions": [
+              {
+                "type": "KeyboardPress",
+                "param": {
+                  "value": "Enter"
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"在任务框 input 输入 '今天学习 JS' 后，按回车键。\",\n  \"log\": \"我将使用 KeyboardPress 动作来按回车键。\",\n  \"more_actions_needed_by_instruction\": false,\n  \"action\": {\n    \"type\": \"KeyboardPress\",\n    \"param\": {\n      \"value\": \"Enter\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 2029,
+              "completion_tokens": 99,
+              "total_tokens": 2128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "在任务框 input 输入 明天学习 Rust，按回车键",
+      "tasks": [
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在任务框 input 输入 明天学习 Rust，按回车键 @ ",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "在任务框 input 输入 明天学习 Rust，按回车键",
+            "log": "I will use action Input to enter '明天学习 Rust' in the task input box first.",
+            "more_actions_needed_by_instruction": true,
+            "action": {
+              "type": "Input",
+              "locate": {
+                "prompt": "任务框 input",
+                "bbox": [
+                  569,
+                  148,
+                  1064,
+                  179
+                ]
+              },
+              "param": {
+                "value": "明天学习 Rust"
+              }
+            },
+            "actions": [
+              {
+                "type": "Input",
+                "locate": {
+                  "prompt": "任务框 input",
+                  "bbox": [
+                    569,
+                    148,
+                    1064,
+                    179
+                  ]
+                },
+                "param": {
+                  "value": "明天学习 Rust"
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"在任务框 input 输入 明天学习 Rust，按回车键\",\n  \"log\": \"I will use action Input to enter '明天学习 Rust' in the task input box first.\",\n  \"more_actions_needed_by_instruction\": true,\n  \"action\": {\n    \"type\": \"Input\",\n    \"locate\": {\n      \"bbox_2d\": [\n        569,\n        148,\n        1064,\n        179\n      ],\n      \"prompt\": \"任务框 input\"\n    },\n    \"param\": {\n      \"value\": \"明天学习 Rust\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 1978,
+              "completion_tokens": 146,
+              "total_tokens": 2124
+            }
+          }
+        },
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "任务框 input",
+          "response": {
+            "elements": [
+              {
+                "id": "jdppk"
+              }
+            ]
+          },
+          "element": {
+            "id": "jdppk",
+            "center": [
+              816,
+              163
+            ],
+            "rect": {
+              "left": 812,
+              "top": 159,
+              "width": 8,
+              "height": 8
+            }
+          }
+        },
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在任务框 input 输入 明天学习 Rust，按回车键 @ - I will use action Input to enter '明天学习 Rust' in the task input box first.",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "在任务框 input 输入 明天学习 Rust，按回车键",
+            "log": "I will use action KeyboardPress to press the Enter key to submit the input.",
+            "more_actions_needed_by_instruction": false,
+            "action": {
+              "type": "KeyboardPress",
+              "param": {
+                "value": "Enter"
+              }
+            },
+            "actions": [
+              {
+                "type": "KeyboardPress",
+                "param": {
+                  "value": "Enter"
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"在任务框 input 输入 明天学习 Rust，按回车键\",\n  \"log\": \"I will use action KeyboardPress to press the Enter key to submit the input.\",\n  \"more_actions_needed_by_instruction\": false,\n  \"action\": {\n    \"type\": \"KeyboardPress\",\n    \"param\": {\n      \"value\": \"Enter\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 2030,
+              "completion_tokens": 98,
+              "total_tokens": 2128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "在任务框 input 输入后天学习 AI，按回车键",
+      "tasks": [
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在任务框 input 输入后天学习 AI，按回车键 @ ",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "在任务框 input 输入后天学习 AI，按回车键",
+            "log": "I will use action Input to enter '后天学习 AI' in the task input box first.",
+            "more_actions_needed_by_instruction": true,
+            "action": {
+              "type": "Input",
+              "locate": {
+                "prompt": "任务输入框",
+                "bbox": [
+                  571,
+                  149,
+                  1066,
+                  183
+                ]
+              },
+              "param": {
+                "value": "后天学习 AI"
+              }
+            },
+            "actions": [
+              {
+                "type": "Input",
+                "locate": {
+                  "prompt": "任务输入框",
+                  "bbox": [
+                    571,
+                    149,
+                    1066,
+                    183
+                  ]
+                },
+                "param": {
+                  "value": "后天学习 AI"
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"在任务框 input 输入后天学习 AI，按回车键\",\n  \"log\": \"I will use action Input to enter '后天学习 AI' in the task input box first.\",\n  \"more_actions_needed_by_instruction\": true,\n  \"action\": {\n    \"type\": \"Input\",\n    \"locate\": {\n      \"bbox_2d\": [\n        571,\n        149,\n        1066,\n        183\n      ],\n      \"prompt\": \"任务输入框\"\n    },\n    \"param\": {\n      \"value\": \"后天学习 AI\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 1977,
+              "completion_tokens": 146,
+              "total_tokens": 2123
+            }
+          }
+        },
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "任务输入框",
+          "response": {
+            "elements": [
+              {
+                "id": "cgedn"
+              }
+            ]
+          },
+          "element": {
+            "id": "cgedn",
+            "center": [
+              818,
+              166
+            ],
+            "rect": {
+              "left": 814,
+              "top": 162,
+              "width": 8,
+              "height": 8
+            }
+          }
+        },
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "在任务框 input 输入后天学习 AI，按回车键 @ - I will use action Input to enter '后天学习 AI' in the task input box first.",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "在任务框 input 输入后天学习 AI，按回车键",
+            "log": "I will use action KeyboardPress to press the Enter key to submit the input.",
+            "more_actions_needed_by_instruction": false,
+            "action": {
+              "type": "KeyboardPress",
+              "param": {
+                "value": "Enter"
+              }
+            },
+            "actions": [
+              {
+                "type": "KeyboardPress",
+                "param": {
+                  "value": "Enter"
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"在任务框 input 输入后天学习 AI，按回车键\",\n  \"log\": \"I will use action KeyboardPress to press the Enter key to submit the input.\",\n  \"more_actions_needed_by_instruction\": false,\n  \"action\": {\n    \"type\": \"KeyboardPress\",\n    \"param\": {\n      \"value\": \"Enter\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 2030,
+              "completion_tokens": 96,
+              "total_tokens": 2126
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "将鼠标移动到任务列表中的第二项，点击第二项任务右边的删除按钮",
+      "tasks": [
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "将鼠标移动到任务列表中的第二项，点击第二项任务右边的删除按钮 @ ",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "将鼠标移动到任务列表中的第二项，点击第二项任务右边的删除按钮",
+            "log": "我将使用 Hover 动作将鼠标移动到任务列表中的第二项。",
+            "error": null,
+            "more_actions_needed_by_instruction": true,
+            "action": {
+              "type": "Hover",
+              "locate": {
+                "prompt": "任务列表中的第二项",
+                "bbox": [
+                  574,
+                  273,
+                  726,
+                  296
+                ]
+              }
+            },
+            "sleep": 500,
+            "actions": [
+              {
+                "type": "Hover",
+                "locate": {
+                  "prompt": "任务列表中的第二项",
+                  "bbox": [
+                    574,
+                    273,
+                    726,
+                    296
+                  ]
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"将鼠标移动到任务列表中的第二项，点击第二项任务右边的删除按钮\",\n  \"log\": \"我将使用 Hover 动作将鼠标移动到任务列表中的第二项。\",\n  \"error\": null,\n  \"more_actions_needed_by_instruction\": true,\n  \"action\": {\n    \"type\": \"Hover\",\n    \"locate\": {\n      \"bbox_2d\": [\n        574,\n        273,\n        726,\n        296\n      ],\n      \"prompt\": \"任务列表中的第二项\"\n    }\n  },\n  \"sleep\": 500\n}",
+            "usage": {
+              "prompt_tokens": 1982,
+              "completion_tokens": 147,
+              "total_tokens": 2129
+            }
+          }
+        },
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "任务列表中的第二项",
+          "response": {
+            "elements": [
+              {
+                "id": "iiknj"
+              }
+            ]
+          },
+          "element": {
+            "id": "iiknj",
+            "indexId": 24,
+            "center": [
+              651,
+              285
+            ],
+            "rect": {
+              "left": 575,
+              "top": 271,
+              "width": 152,
+              "height": 28,
+              "zoom": 1
+            }
+          }
+        },
+        {
+          "type": "plan",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "将鼠标移动到任务列表中的第二项，点击第二项任务右边的删除按钮 @ - 我将使用 Hover 动作将鼠标移动到任务列表中的第二项。",
+          "response": {
+            "what_the_user_wants_to_do_next_by_instruction": "点击第二项任务右边的删除按钮",
+            "log": "我将使用 Tap 动作点击第二项任务右边的删除按钮。",
+            "more_actions_needed_by_instruction": false,
+            "action": {
+              "type": "Tap",
+              "locate": {
+                "prompt": "第二项任务右边的删除按钮",
+                "bbox": [
+                  1028,
+                  278,
+                  1043,
+                  290
+                ]
+              }
+            },
+            "actions": [
+              {
+                "type": "Tap",
+                "locate": {
+                  "prompt": "第二项任务右边的删除按钮",
+                  "bbox": [
+                    1028,
+                    278,
+                    1043,
+                    290
+                  ]
+                }
+              }
+            ],
+            "rawResponse": "{\n  \"what_the_user_wants_to_do_next_by_instruction\": \"点击第二项任务右边的删除按钮\",\n  \"log\": \"我将使用 Tap 动作点击第二项任务右边的删除按钮。\",\n  \"more_actions_needed_by_instruction\": false,\n  \"action\": {\n    \"type\": \"Tap\",\n    \"locate\": {\n      \"bbox_2d\": [\n        1028,\n        278,\n        1043,\n        290\n      ],\n      \"prompt\": \"第二项任务右边的删除按钮\"\n    }\n  }\n}",
+            "usage": {
+              "prompt_tokens": 2033,
+              "completion_tokens": 125,
+              "total_tokens": 2158
+            }
+          }
+        },
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "第二项任务右边的删除按钮",
+          "response": {
+            "elements": [
+              {
+                "id": "jicbk"
+              }
+            ]
+          },
+          "element": {
+            "id": "jicbk",
+            "indexId": 25,
+            "center": [
+              1035,
+              285
+            ],
+            "rect": {
+              "left": 1015,
+              "top": 265,
+              "width": 40,
+              "height": 40,
+              "zoom": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Tap - 第二条任务左边的勾选按钮",
+      "tasks": [
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "第二条任务左边的勾选按钮",
+          "response": {
+            "elements": [
+              {
+                "id": "cdllc"
+              }
+            ]
+          },
+          "element": {
+            "id": "cdllc",
+            "indexId": 23,
+            "center": [
+              535,
+              285
+            ],
+            "rect": {
+              "left": 515,
+              "top": 265,
+              "width": 40,
+              "height": 40,
+              "zoom": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Tap - 任务列表下面的 completed 状态按钮",
+      "tasks": [
+        {
+          "type": "locate",
+          "pageContext": {
+            "url": "https://todomvc.com/examples/react/dist/",
+            "size": {
+              "width": 1280,
+              "height": 720,
+              "dpr": 1
+            }
+          },
+          "prompt": "任务列表下面的 completed 状态按钮",
+          "response": {
+            "elements": [
+              {
+                "id": "lgdli"
+              }
+            ]
+          },
+          "element": {
+            "id": "lgdli",
+            "indexId": 28,
+            "center": [
+              837,
+              335
+            ],
+            "rect": {
+              "left": 803,
+              "top": 326,
+              "width": 69,
+              "height": 18,
+              "zoom": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

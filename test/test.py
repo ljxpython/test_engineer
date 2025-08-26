@@ -1,5 +1,6 @@
 from functools import reduce
 
+from setuptools import setup, find_packages
 
 # def multi():
 #     return [lambda x : i*x for i in range(4)]

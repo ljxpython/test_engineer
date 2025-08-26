@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp add promptx dpml-prompt mcp-server)",
+      "Bash(claude mcp:*)",
+      "Bash(npm config set:*)",
+      "Bash(npm config get:*)",
+      "Bash(npm install:*)",
+      "mcp__promptx__promptx_init",
+      "mcp__promptx__promptx_action",
+      "Bash(mkdir:*)"
+    ],
+    "deny": [],
+    "ask": [],
+    "defaultMode": "acceptEdits"
+  }
+}
