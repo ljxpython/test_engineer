@@ -8,7 +8,11 @@
       "Bash(npm install:*)",
       "mcp__promptx__promptx_init",
       "mcp__promptx__promptx_action",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "mcp__promptx__promptx_welcome",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": [],
