@@ -3,8 +3,16 @@
   "stateHistory": [
     {
       "from": "initial",
+      "command": "action",
+      "timestamp": "2025-08-30T03:34:02.030Z",
+      "args": [
+        "interviewer-2"
+      ]
+    },
+    {
+      "from": "role_activated_with_memory",
       "command": "init",
-      "timestamp": "2025-08-29T06:19:02.817Z",
+      "timestamp": "2025-08-30T03:34:10.852Z",
       "args": [
         {
           "workingDirectory": "/Users/bytedance/PycharmProjects/my_best/test_engineer",
@@ -14,18 +22,12 @@
     },
     {
       "from": "initialized",
-      "command": "welcome",
-      "timestamp": "2025-08-29T06:19:15.029Z",
-      "args": []
-    },
-    {
-      "from": "service_discovery",
       "command": "action",
-      "timestamp": "2025-08-29T06:19:21.890Z",
+      "timestamp": "2025-08-30T03:34:15.726Z",
       "args": [
-        "resume-coach"
+        "interviewer-2"
       ]
     }
   ],
-  "lastUpdated": "2025-08-29T06:19:21.902Z"
+  "lastUpdated": "2025-08-30T03:34:15.741Z"
 }
