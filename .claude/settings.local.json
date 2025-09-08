@@ -16,10 +16,29 @@
       "Bash(git push:*)",
       "mcp__sequential-thinking__sequentialthinking",
       "WebSearch",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Read(/Users/bytedance/.claude/**)",
+      "Bash(curl:*)",
+      "Bash(mcp-chrome-bridge:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(unzip:*)",
+      "Bash(lsof:*)",
+      "Bash(open:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(echo:*)",
+      "mcp__morphllm-fast-apply__create_directory",
+      "mcp__morphllm-fast-apply__write_file",
+      "Bash(tree:*)",
+      "mcp__morphllm-fast-apply__directory_tree"
     ],
     "deny": [],
     "ask": [],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "/Users/bytedance/.claude",
+      "/private/tmp",
+      "/Users/bytedance/.nvm/versions/node/v20.17.0/lib/node_modules/mcp-chrome-bridge"
+    ]
   }
 }

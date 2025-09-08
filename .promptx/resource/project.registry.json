@@ -4,8 +4,8 @@
   "metadata": {
     "version": "2.0.0",
     "description": "project 级资源注册表",
-    "createdAt": "2025-08-30T03:34:10.858Z",
-    "updatedAt": "2025-08-30T03:34:10.864Z",
+    "createdAt": "2025-09-06T16:34:55.766Z",
+    "updatedAt": "2025-09-06T16:34:55.772Z",
     "resourceCount": 9
   },
   "resources": [
@@ -17,9 +17,9 @@
       "description": "执行模式，定义具体的行为模式",
       "reference": "@project://.promptx/resource/role/interviewer-1/cto-reconnaissance.execution.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.860Z",
-        "updatedAt": "2025-08-30T03:34:10.860Z",
-        "scannedAt": "2025-08-30T03:34:10.860Z",
+        "createdAt": "2025-09-06T16:34:55.768Z",
+        "updatedAt": "2025-09-06T16:34:55.768Z",
+        "scannedAt": "2025-09-06T16:34:55.768Z",
         "path": "role/interviewer-1/cto-reconnaissance.execution.md"
       }
     },
@@ -31,9 +31,9 @@
       "description": "专业角色，提供特定领域的专业能力",
       "reference": "@project://.promptx/resource/role/interviewer-1/interviewer-1.role.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.860Z",
-        "updatedAt": "2025-08-30T03:34:10.860Z",
-        "scannedAt": "2025-08-30T03:34:10.860Z",
+        "createdAt": "2025-09-06T16:34:55.769Z",
+        "updatedAt": "2025-09-06T16:34:55.769Z",
+        "scannedAt": "2025-09-06T16:34:55.769Z",
         "path": "role/interviewer-1/interviewer-1.role.md"
       }
     },
@@ -45,9 +45,9 @@
       "description": "思维模式，指导AI的思考方式",
       "reference": "@project://.promptx/resource/role/interviewer-1/interviewer-thinking.thought.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.861Z",
-        "updatedAt": "2025-08-30T03:34:10.861Z",
-        "scannedAt": "2025-08-30T03:34:10.861Z",
+        "createdAt": "2025-09-06T16:34:55.769Z",
+        "updatedAt": "2025-09-06T16:34:55.769Z",
+        "scannedAt": "2025-09-06T16:34:55.769Z",
         "path": "role/interviewer-1/interviewer-thinking.thought.md"
       }
     },
@@ -59,9 +59,9 @@
       "description": "专业角色，提供特定领域的专业能力",
       "reference": "@project://.promptx/resource/role/interviewer-2/interviewer-2.role.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.861Z",
-        "updatedAt": "2025-08-30T03:34:10.861Z",
-        "scannedAt": "2025-08-30T03:34:10.861Z",
+        "createdAt": "2025-09-06T16:34:55.770Z",
+        "updatedAt": "2025-09-06T16:34:55.770Z",
+        "scannedAt": "2025-09-06T16:34:55.769Z",
         "path": "role/interviewer-2/interviewer-2.role.md"
       }
     },
@@ -73,9 +73,9 @@
       "description": "思维模式，指导AI的思考方式",
       "reference": "@project://.promptx/resource/role/interviewer-2/pressure-thinking.thought.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.862Z",
-        "updatedAt": "2025-08-30T03:34:10.862Z",
-        "scannedAt": "2025-08-30T03:34:10.862Z",
+        "createdAt": "2025-09-06T16:34:55.770Z",
+        "updatedAt": "2025-09-06T16:34:55.770Z",
+        "scannedAt": "2025-09-06T16:34:55.770Z",
         "path": "role/interviewer-2/pressure-thinking.thought.md"
       }
     },
@@ -87,9 +87,9 @@
       "description": "执行模式，定义具体的行为模式",
       "reference": "@project://.promptx/resource/role/interviewer-2/three-step-execution.execution.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.862Z",
-        "updatedAt": "2025-08-30T03:34:10.862Z",
-        "scannedAt": "2025-08-30T03:34:10.862Z",
+        "createdAt": "2025-09-06T16:34:55.770Z",
+        "updatedAt": "2025-09-06T16:34:55.770Z",
+        "scannedAt": "2025-09-06T16:34:55.770Z",
         "path": "role/interviewer-2/three-step-execution.execution.md"
       }
     },
@@ -101,9 +101,9 @@
       "description": "执行模式，定义具体的行为模式",
       "reference": "@project://.promptx/resource/role/resume-coach/execution/five-step-audit.execution.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.863Z",
-        "updatedAt": "2025-08-30T03:34:10.863Z",
-        "scannedAt": "2025-08-30T03:34:10.863Z",
+        "createdAt": "2025-09-06T16:34:55.771Z",
+        "updatedAt": "2025-09-06T16:34:55.771Z",
+        "scannedAt": "2025-09-06T16:34:55.771Z",
         "path": "role/resume-coach/execution/five-step-audit.execution.md"
       }
     },
@@ -115,9 +115,9 @@
       "description": "专业角色，提供特定领域的专业能力",
       "reference": "@project://.promptx/resource/role/resume-coach/resume-coach.role.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.863Z",
-        "updatedAt": "2025-08-30T03:34:10.863Z",
-        "scannedAt": "2025-08-30T03:34:10.863Z",
+        "createdAt": "2025-09-06T16:34:55.771Z",
+        "updatedAt": "2025-09-06T16:34:55.771Z",
+        "scannedAt": "2025-09-06T16:34:55.771Z",
         "path": "role/resume-coach/resume-coach.role.md"
       }
     },
@@ -129,9 +129,9 @@
       "description": "思维模式，指导AI的思考方式",
       "reference": "@project://.promptx/resource/role/resume-coach/thought/critical-review.thought.md",
       "metadata": {
-        "createdAt": "2025-08-30T03:34:10.864Z",
-        "updatedAt": "2025-08-30T03:34:10.864Z",
-        "scannedAt": "2025-08-30T03:34:10.864Z",
+        "createdAt": "2025-09-06T16:34:55.771Z",
+        "updatedAt": "2025-09-06T16:34:55.771Z",
+        "scannedAt": "2025-09-06T16:34:55.771Z",
         "path": "role/resume-coach/thought/critical-review.thought.md"
       }
     }

@@ -3,31 +3,29 @@
   "stateHistory": [
     {
       "from": "initial",
-      "command": "action",
-      "timestamp": "2025-08-30T03:34:02.030Z",
-      "args": [
-        "interviewer-2"
-      ]
-    },
-    {
-      "from": "role_activated_with_memory",
       "command": "init",
-      "timestamp": "2025-08-30T03:34:10.852Z",
+      "timestamp": "2025-09-06T16:34:55.758Z",
       "args": [
         {
           "workingDirectory": "/Users/bytedance/PycharmProjects/my_best/test_engineer",
-          "ideType": "claude"
+          "ideType": "cursor"
         }
       ]
     },
     {
       "from": "initialized",
+      "command": "welcome",
+      "timestamp": "2025-09-06T16:35:03.579Z",
+      "args": []
+    },
+    {
+      "from": "service_discovery",
       "command": "action",
-      "timestamp": "2025-08-30T03:34:15.726Z",
+      "timestamp": "2025-09-06T16:35:09.910Z",
       "args": [
-        "interviewer-2"
+        "interviewer-1"
       ]
     }
   ],
-  "lastUpdated": "2025-08-30T03:34:15.741Z"
+  "lastUpdated": "2025-09-06T16:35:09.924Z"
 }
