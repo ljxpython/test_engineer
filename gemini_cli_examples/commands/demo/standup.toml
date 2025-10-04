@@ -1,0 +1,13 @@
+# Example custom Gemini CLI command definition.
+# Copy this file to ~/.gemini/commands/demo/standup.toml to enable `/demo:standup`.
+
+description = "Generate a quick daily standup message from the current context."
+
+prompt = """
+You are helping me craft a concise daily standup update.
+Summarize the work represented in the current context using three bullet points:
+1. What was accomplished.
+2. What is planned next.
+3. Any blockers.
+Keep each bullet to one sentence.
+"""
