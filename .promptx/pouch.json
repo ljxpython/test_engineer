@@ -1,31 +1,102 @@
 {
-  "currentState": "role_activated_with_memory",
+  "currentState": "initial",
   "stateHistory": [
     {
       "from": "initial",
-      "command": "init",
-      "timestamp": "2025-09-06T16:34:55.758Z",
+      "command": "action",
+      "timestamp": "2025-10-13T12:00:33.597Z",
+      "args": [
+        "nuwa"
+      ]
+    },
+    {
+      "from": "initial",
+      "command": "recall",
+      "timestamp": "2025-10-13T12:01:50.211Z",
       "args": [
         {
-          "workingDirectory": "/Users/bytedance/PycharmProjects/my_best/test_engineer",
-          "ideType": "cursor"
+          "role": "nuwa",
+          "query": "promptx",
+          "mode": "balanced"
         }
       ]
     },
     {
-      "from": "initialized",
-      "command": "welcome",
-      "timestamp": "2025-09-06T16:35:03.579Z",
+      "from": "initial",
+      "command": "toolx",
+      "timestamp": "2025-10-13T12:04:22.461Z",
+      "args": [
+        "@tool://role-creator",
+        "manual"
+      ]
+    },
+    {
+      "from": "initial",
+      "command": "discover",
+      "timestamp": "2025-10-13T12:04:51.594Z",
       "args": []
     },
     {
-      "from": "service_discovery",
-      "command": "action",
-      "timestamp": "2025-09-06T16:35:09.910Z",
+      "from": "initial",
+      "command": "project",
+      "timestamp": "2025-10-13T12:04:58.725Z",
       "args": [
-        "interviewer-1"
+        {
+          "workingDirectory": "/Users/bytedance/PycharmProjects/my_best/test_engineer",
+          "ideType": "pycharm"
+        }
+      ]
+    },
+    {
+      "from": "initial",
+      "command": "discover",
+      "timestamp": "2025-10-13T12:05:02.899Z",
+      "args": []
+    },
+    {
+      "from": "initial",
+      "command": "remember",
+      "timestamp": "2025-10-13T12:05:26.742Z",
+      "args": [
+        {
+          "role": "nuwa",
+          "engrams": [
+            {
+              "content": "在 test_engineer 项目中，.promptx/resource/role 目录下已有 interviewer-1、interviewer-2、resume-coach 三个角色，绑定项目后即可被 discover 识别。",
+              "schema": "test_engineer 项目 角色 interviewer-1 interviewer-2 resume-coach discover",
+              "strength": 0.7,
+              "type": "ATOMIC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": "initial",
+      "command": "discover",
+      "timestamp": "2025-10-13T12:07:55.070Z",
+      "args": []
+    },
+    {
+      "from": "initial",
+      "command": "action",
+      "timestamp": "2025-10-13T12:19:00.604Z",
+      "args": [
+        "resume-coach"
+      ]
+    },
+    {
+      "from": "initial",
+      "command": "recall",
+      "timestamp": "2025-10-13T12:20:59.305Z",
+      "args": [
+        {
+          "role": "resume-coach",
+          "query": "外包 公司 简历",
+          "mode": "balanced"
+        }
       ]
     }
   ],
-  "lastUpdated": "2025-09-06T16:35:09.924Z"
+  "lastUpdated": "2025-10-13T12:20:59.311Z"
 }
