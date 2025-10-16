@@ -294,3 +294,7 @@ pyrightconfig.json
 
 
 /resumePolice
+
+# macOS Finder artifacts
+.DS_Store
+**/.DS_Store
