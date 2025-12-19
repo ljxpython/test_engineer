@@ -1,4 +1,3 @@
-
 """
 https://leetcode.cn/problems/3sum/description/
 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请你返回所有和为 0 且不重复的三元组。
@@ -27,7 +26,9 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 输出：[[0,0,0]]
 解释：唯一可能的三元组和为 0 。
 
+注意审题,元素可以相同,但是索引不能相同
 """
+
 
 class Solution(object):
     def threeSum(self, nums):
@@ -35,17 +36,47 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        # list_need = []
-        # for i in nums:
-        #     for j in nums:
-        #         for k in nums:
-        #             if i +j +k == 0 and i != j and i != k and j != k:
-        #                 list_need.append([i,j,k])
-        # # list_need 去重
-        #
-        nums.sorts()
-        results = []
+        # 排序一下后更加容易,固定一个值,然后使用双指针
+        nums.sort()
+        result = []
         n = len(nums)
 
+        # 固定一个值,然后找合适的内容
+        for i in range(n-2):  # 修改这里
+            # 定义两个指针
+            left = i + 1
+            right = n - 1
+            if nums[i] > 0:
+                # 这种情况可以直接跳出循环
+                break
+            # 去重
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+
+            while left < right:
+                total = nums[i] + nums[left] + nums[right]
+                # total 过大和过小的情况去除掉
+                if total > 0:
+                    right -= 1
+                elif total < 0:
+                    left += 1
+                # 下面是符合的情况
+                else:
+                    # 将值记录到result中
+                    result.append([nums[i] , nums[left], nums[right]])
+                    # 去重处理
+                    while left < right and nums[left] == nums[left+1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right-1]:
+                        right -= 1
+                    left += 1
+                    right -= 1
+
+        return result
 
 
+if __name__ == '__main__':
+    solve = Solution()
+    nums = [-1,-1,2,1]
+    resp = solve.threeSum(nums=nums)
+    print(resp)

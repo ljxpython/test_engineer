@@ -28,6 +28,45 @@ def bulubulu_sort(list_demo:list):
     return list_demo
 
 
+# 选择排序
+
+def chocessort(nums:list[int]):
+    '''
+    核心思想：每一轮从i位置开始，找出最小（或最大）元素放到i位置
+比较方式：i位置元素与后面所有元素比较
+交换次数：最多O(n)次交换
+
+
+    :param nums:
+    :return:
+    '''
+    for i in range(len(nums)-1):
+        for j in range(i,len(nums)):
+            # 两两比较
+            if nums[i] > nums[j]:
+                nums[i],nums[j] = nums[j],nums[i]
+    return nums
+
+def bubble_sort(nums: list[int]):
+    '''
+    核心思想：相邻元素两两比较，大的元素像气泡一样"上浮"到末尾
+比较方式：只比较相邻元素（j和j+1）
+交换次数：最多O(n²)次交换
+
+    :param nums:
+    :return:
+    '''
+    n = len(nums)
+    # 外层循环：控制排序轮数，共n-1轮
+    for i in range(n - 1):
+        # 内层循环：从第一个元素开始，比较相邻元素
+        # 每轮结束后，最大的元素会"冒泡"到末尾
+        for j in range(n - 1 - i):  # 每轮范围缩小
+            if nums[j] > nums[j + 1]:  # 比较相邻元素
+                nums[j], nums[j + 1] = nums[j + 1], nums[j]  # 交换相邻元素
+    return nums
+
+
 if __name__ == '__main__':
     list_demo = [1,2,3,9,2,4]
     print(bulubulu_sort(list_demo=list_demo))
