@@ -107,10 +107,3 @@ class Solution(object):
         fast = slow = nums[0]
 
 
-if __name__ == '__main__':
-    b = 0
-    a = b if b >0 else 1
-
-if __name__ == '__main__':
-    b = 0
-    a = b if b >0 else 1

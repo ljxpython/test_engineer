@@ -1,56 +1,38 @@
-def threeSum(nums: list[int]):
-    """
-    :type nums: List[int]
-    :rtype: List[List[int]]
-    """
-    # 三数之和为0 也就是 a + b + c = 0
-    # 固定一个值,然后寻找后面两个值是否加起来等于这个值
-    # 需要注意 三个元素的index不能相同,那么如何不相同呢? i j k 不相等
-    # 加入到res_list的元素不能重复   -> 可以考虑先去重
-    # 做一道题没有思路时,要考虑一下,是不是需要排序,双指针可以解决那些事,滑动窗口可以解决那些事
-    # 正式解决这个问题时的前,要去除哪些异常情况?
-    # 双指针还要考虑清楚什么时候移动左指针,什么之后移动右指针
-    if len(nums) < 3:
-        return []
-    
-    res_list = []
-    # 排序
-    nums.sort()
-    n = len(nums)
-    
-    # 循环
-    for i in range(n - 2):
-        # 如果当前数字大于0，则三数之和不可能为0
-        if nums[i] > 0:
-            break
-            
-        # 去重：跳过重复的元素
-        if i > 0 and nums[i] == nums[i - 1]:
-            continue
-            
-        left = i + 1
-        right = n - 1
-        
-        while left < right:
-            total = nums[i] + nums[left] + nums[right]
-            
-            if total == 0:
-                res_list.append([nums[i], nums[left], nums[right]])
-                
-                # 去重：跳过重复的元素
-                while left < right and nums[left] == nums[left + 1]:
-                    left += 1
-                while left < right and nums[right] == nums[right - 1]:
-                    right -= 1
-                    
-                # 移动指针
-                left += 1
-                right -= 1
-            elif total < 0:
-                # 和太小，移动左指针
-                left += 1
-            else:
-                # 和太大，移动右指针
-                right -= 1
-                
-    return res_list
+""""
+给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+
+你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+
+返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+
+
+
+示例 1：
+
+输入：[7,1,5,3,6,4]
+输出：5
+解释：在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
+示例 2：
+
+输入：prices = [7,6,4,3,1]
+输出：0
+解释：在这种情况下, 没有交易完成, 所以最大利润为 0。"""
+
+
+def main(nums:list[int]):
+    # max(后面的数 - 前面的数)
+    # 定义一个最小只
+    max_profile = float('-inf')
+    # 最小的价格,开始定义为第一个数
+    min_price = nums[0]
+    for price in nums[1:]:
+        # 更新一个最小价格
+        min_price = min(min_price,price)
+        # 当前的利润
+        current_profile = price - min_price
+        # 比较
+        max_profile = max(max_profile,current_profile)
+    return max_profile if max_profile != float('-fin') else 0
+
+
